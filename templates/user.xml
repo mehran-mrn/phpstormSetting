@@ -1,0 +1,26 @@
+<templateSet group="user">
+  <template name="postform" value="&lt;!-- new post form --&gt;&#10;&lt;form action=&quot;POST&quot; class=&quot;form&quot; action=&quot;{{route('$routeName$')}}&quot;&gt;&#10;    @csrf&#10;        &#10;&lt;/form&gt;" description="postform" toReformat="true" toShortenFQNames="true">
+    <variable name="routeName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="inputt" value="&lt;!-- $name$ text input --&gt;&#10;&lt;div class=&quot;form-group $class$&quot; &gt;&#10;            &lt;label for=&quot;$id$&quot;&gt;{{__('static.admin.address')}} &lt;span class=&quot;text-danger&quot;&gt;*&lt;/span&gt;&lt;/label&gt;&#10;            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;$name$&quot; id=&quot;$id$&quot; value=&quot;$value$&quot;&gt;&#10;        &lt;/div&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="false" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+  <template name="ttt" value="&lt;!-- new form --&gt;&#10;    &lt;form action=&quot;$route$&quot; method=&quot;post&quot; class=&quot;form&quot;&gt;&#10;        &lt;input type=&quot;hidden&quot; value=&quot;55&quot;&gt;&#10;        &lt;label for=&quot;$id$&quot; &gt;&#10;        &lt;input name=&quot;$name$&quot; id=&quot;$id$&quot; type=&quot;hidden&quot; value=&quot;55&quot;&gt;&#10;        &#10;        &#10;    &lt;/form&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="route" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="id" expression="capitalize(name)" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
