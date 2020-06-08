@@ -9,12 +9,12 @@
           <option name="port" value="21" />
         </fileTransfer>
       </webServer>
-      <webServer id="bd99e692-57e7-493e-a18e-4a408fe2dbef" name="sabin" url="http://95.156.255.244">
-        <fileTransfer host="95.156.255.244" port="21">
+      <webServer id="bd99e692-57e7-493e-a18e-4a408fe2dbef" name="sabin" url="http://95.156.255.97">
+        <fileTransfer host="95.156.255.97" port="22" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
-          <option name="port" value="21" />
+          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
     </option>
